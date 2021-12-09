@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Khai Báo Và Sử Dụng Biến</title>
+    <title>Bài Tập Chương Trình Nhập Điểm</title>
 </head>
 <body>
 <script>
-    let a ;
-    let b;
-a= prompt('nhap a')
-b=prompt('nhap b')
-if (a%b == 0) {
-    alert("a chia hết cho b");
-}
-else {
-    alert("a k chia hết cho b");
-}
+    var VatLy
+    var HoaHoc
+    var SinhHoc
+   VatLy = prompt('nhap diem VatLy');
+   HoaHoc = prompt('nhap diem HoaHoc');
+ SinhHoc = prompt('nhap diem SinhHoc')
+
+  VatLy=parseInt(VatLy)
+    HoaHoc=parseInt(HoaHoc)
+    SinhHoc=parseInt(SinhHoc)
+
+    var dtb=(VatLy+HoaHoc+SinhHoc)/3;
+    alert('tong diem='+dtb);
 
 </script>
 </body>
